@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | PowerFlex Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-dumbbell"></i>
+                Power<span>Flex</span>
+            </a>
+            
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Join PowerFlex Gym</h1>
+            <p>Complete the form below to start your fitness journey with us</p>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="section">
+        <div class="container">
+            <div class="form-container">
+                <form id="registration-form" class="registration-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="age">Age *</label>
+                            <input type="number" id="age" name="age" min="16" max="100" required>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Gender *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="male" required>
+                                <span class="radio-custom"></span>
+                                Male
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="female" required>
+                                <span class="radio-custom"></span>
+                                Female
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="other" required>
+                                <span class="radio-custom"></span>
+                                Other
+                            </label>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="goals">Fitness Goals *</label>
+                        <select id="goals" name="goals" required>
+                            <option value="">Select your primary goal</option>
+                            <option value="weight-loss">Weight Loss</option>
+                            <option value="muscle-gain">Muscle Gain</option>
+                            <option value="strength">Strength Training</option>
+                            <option value="endurance">Endurance & Cardio</option>
+                            <option value="flexibility">Flexibility & Mobility</option>
+                            <option value="general">General Fitness</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="membership-type">Membership Type *</label>
+                        <select id="membership-type" name="membership-type" required>
+                            <option value="">Select membership type</option>
+                            <option value="basic">Basic - $29/month</option>
+                            <option value="premium">Premium - $59/month</option>
+                            <option value="elite">Elite - $99/month</option>
+                            <option value="student">Student - 25% off any plan</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">Fitness Experience Level</label>
+                        <select id="experience" name="experience">
+                            <option value="">Select your experience level</option>
+                            <option value="beginner">Beginner (0-6 months)</option>
+                            <option value="intermediate">Intermediate (6 months - 2 years)</option>
+                            <option value="advanced">Advanced (2+ years)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="medical">Medical Conditions or Injuries</label>
+                        <textarea id="medical" name="medical" rows="3" placeholder="Please list any medical conditions, injuries, or limitations we should be aware of..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span class="checkbox-custom"></span>
+                            I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a> *
+                        </label>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkbox-custom"></span>
+                            I would like to receive fitness tips and special offers via email
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">Complete Registration</button>
+                </form>
+                
+                <div class="form-sidebar">
+                    <h3>Why Register With Us?</h3>
+                    <div class="benefit-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-dumbbell"></i>
+                            <div>
+                                <h4>Personalized Plans</h4>
+                                <p>Get workout plans tailored to your goals and fitness level.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Progress Tracking</h4>
+                                <p>Monitor your progress with our advanced tracking system.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Expert Guidance</h4>
+                                <p>Access to certified trainers and nutrition experts.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <h4>Flexible Scheduling</h4>
+                                <p>Book classes and sessions at your convenience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h4>Need Help?</h4>
+                        <p>Our team is here to assist you with the registration process.</p>
+                        <p><i class="fas fa-phone"></i> +92 300 0709856</p>
+                        <p><i class="fas fa-envelope"></i> support@f250568@cfd.nu.edu.pk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>PowerFlex Gym</h3>
+                    <p>Transform your body, transform your life. Join our fitness community today.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">Strength Training</a></li>
+                        <li><a href="#">Cardio Fitness</a></li>
+                        <li><a href="#">Yoga & Meditation</a></li>
+                        <li><a href="#">Personal Training</a></li>
+                        <li><a href="#">Group Classes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Gulberg II ,Street 02, Faisalabad</li>
+                        <li><i class="fas fa-phone"></i> +92 300 0709856</li>
+                        <li><i class="fas fa-envelope"></i> f250568@cfd.nu.edu.pk</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 5:00 AM - 11:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 PowerFlex Gym. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

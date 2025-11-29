@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | PowerFlex Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-dumbbell"></i>
+                Power<span>Flex</span>
+            </a>
+            
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Premium gym equipment, supplements, and accessories for your fitness journey</p>
+        </div>
+    </section>
+
+    <!-- Product Filter -->
+    <section class="section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="equipment">Gym Equipment</button>
+                <button class="filter-btn" data-filter="supplements">Supplements</button>
+                <button class="filter-btn" data-filter="accessories">Accessories</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Gym Equipment -->
+                <div class="product-card" data-category="equipment">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                    <div class="product-content">
+                        <h3>Adjustable Dumbbell Set</h3>
+                        <p class="product-price">$299.99</p>
+                        <p class="product-desc">Professional adjustable dumbbell set with quick-change weight system. Perfect for home or gym use.</p>
+                        <button class="btn add-to-cart" data-product="Adjustable Dumbbell Set" data-price="299.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="equipment">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                    <div class="product-content">
+                        <h3>Treadmill Pro 5000</h3>
+                        <p class="product-price">$1,499.99</p>
+                        <p class="product-desc">Commercial-grade treadmill with incline control, heart rate monitoring, and interactive training programs.</p>
+                        <button class="btn add-to-cart" data-product="Treadmill Pro 5000" data-price="1499.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="equipment">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                    <div class="product-content">
+                        <h3>Power Rack System</h3>
+                        <p class="product-price">$899.99</p>
+                        <p class="product-desc">Heavy-duty power rack with pull-up bar, dip station, and safety catches for safe heavy lifting.</p>
+                        <button class="btn add-to-cart" data-product="Power Rack System" data-price="899.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Supplements -->
+                <div class="product-card" data-category="supplements">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80');"></div>
+                    <div class="product-content">
+                        <h3>Whey Protein Isolate</h3>
+                        <p class="product-price">$49.99</p>
+                        <p class="product-desc">Premium 100% whey protein isolate with 25g protein per serving. Low carb, low fat formula.</p>
+                        <button class="btn add-to-cart" data-product="Whey Protein Isolate" data-price="49.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="supplements">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1628771065518-0d82f1938462?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                    <div class="product-content">
+                        <h3>BCAA Powder</h3>
+                        <p class="product-price">$29.99</p>
+                        <p class="product-desc">Branch Chain Amino Acids in delicious fruit punch flavor. Supports muscle recovery and endurance.</p>
+                        <button class="btn add-to-cart" data-product="BCAA Powder" data-price="29.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="supplements">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80');"></div>
+                    <div class="product-content">
+                        <h3>Pre-Workout Energizer</h3>
+                        <p class="product-price">$39.99</p>
+                        <p class="product-desc">Advanced pre-workout formula with caffeine, beta-alanine, and nitric oxide boosters for maximum performance.</p>
+                        <button class="btn add-to-cart" data-product="Pre-Workout Energizer" data-price="39.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Accessories -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80');"></div>
+                    <div class="product-content">
+                        <h3>Lifting Gloves</h3>
+                        <p class="product-price">$24.99</p>
+                        <p class="product-desc">Professional weightlifting gloves with padded palms and wrist support. Available in multiple sizes.</p>
+                        <button class="btn add-to-cart" data-product="Lifting Gloves" data-price="24.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="accessories">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80');"></div>
+                    <div class="product-content">
+                        <h3>Yoga Mat Pro</h3>
+                        <p class="product-price">$34.99</p>
+                        <p class="product-desc">Premium non-slip yoga mat with extra cushioning. Perfect for yoga, pilates, and floor exercises.</p>
+                        <button class="btn add-to-cart" data-product="Yoga Mat Pro" data-price="34.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="accessories">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80');"></div>
+                    <div class="product-content">
+                        <h3>Shaker Bottle</h3>
+                        <p class="product-price">$12.99</p>
+                        <p class="product-desc">24oz professional shaker bottle with mixing ball. Perfect for protein shakes and supplements.</p>
+                        <button class="btn add-to-cart" data-product="Shaker Bottle" data-price="12.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-total">
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button class="btn btn-primary checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Icon -->
+    <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>PowerFlex Gym</h3>
+                    <p>Transform your body, transform your life. Join our fitness community today.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">Strength Training</a></li>
+                        <li><a href="#">Cardio Fitness</a></li>
+                        <li><a href="#">Yoga & Meditation</a></li>
+                        <li><a href="#">Personal Training</a></li>
+                        <li><a href="#">Group Classes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fitness Street, City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope"></i> info@powerflexgym.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 5:00 AM - 11:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 PowerFlex Gym. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
